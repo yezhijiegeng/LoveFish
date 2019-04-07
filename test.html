@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head><title>研究</title></head>
+    <body>
+        <canvas id="canvas" style="width:500px;height:400px; border:1px solid red"></canvas>
+        <img id="img" src="./src/fruit.png"  hidden />
+    </body>
+    <Script type="text/javascript">
+        var cxt = document.getElementById("canvas").getContext("2d");
+        var imgElement = document.getElementById("img");
+        imgElement.onload = function () { cxt.drawImage(imgElement, 10, 10, 200, 200); };
+    </Script>
+</html>
